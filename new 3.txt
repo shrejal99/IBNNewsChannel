@@ -1,0 +1,12 @@
+import spi.convs.*;
+class test
+{
+public static void main(String[]aa)
+{
+  TempConv a= new TempConv();
+  double b=a.CtoF(20.5);
+  System.out.pintln(p);
+  TimeConv b=new TimeConv();
+  ind s =a.HtoS(20);  
+}
+}

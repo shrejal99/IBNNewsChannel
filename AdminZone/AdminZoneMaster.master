@@ -1,0 +1,130 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminZoneMaster.master.cs" Inherits="AdminZone_AdminZoneMaster" %>
+
+<!DOCTYPE html>
+        <html>
+<head>
+    <title></title>
+<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="../css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+<style>
+.ttop
+{
+min-height:45px;
+background:#1c2331;
+color:white;
+font-size:20px;
+font-family:monotype corsiva;
+font-weight:bold;
+padding-top:.8%;
+}
+ .header {
+        background:#f2f2f2;
+    }
+#menu
+{
+background:transparent;
+border:none;
+box-shadow:none;
+}
+.ufooter{
+min-height:250px;
+background:black;
+}
+.bfooter
+{
+min-height:50px;
+background:black;
+margin-top:2px;
+color:white;
+padding-top:1%;
+text-align:center;
+}
+.main
+{
+min-height:500px;
+}
+</style>
+     <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+  <form runat="server" id="form1">
+<div class="container-fluid">
+
+<div class="row">
+<div class="col-sm-12 ttop">
+<div class="col-sm-4">
+<span class="fa fa-mobile"></span> +91-9918129959
+</div>
+<div class="col-sm-4">WELCOME TO IBN LIVE NEWS</div>
+<div class="col-sm-4" style="text-align:center;">
+</div>
+</div>
+<div class="col-sm-12 header">
+<div class="col-sm-2 logo">
+<img src="../images/newpng.png" class="img-responsive" style="max-height:60px">
+</div>
+<div class="col-sm-10 menu">
+<nav class="navbar navbar-default" id="menu">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+  
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="AddNewsCategory.aspx">ADD NEWS CATEGORY</a></li>
+        <li><a href="AddNews.aspx">ADD NEWS</a></li>
+        <li><a href="SuggestionMgmt.aspx">SUGGESTION MGMT</a></li>
+           <li><a href="VideoMgmt.aspx">ADD VIDEO</a></li>
+            <li><a href="AdvertisementMgmt.aspx">ADD ADVERTISEMENT</a></li>
+                 <li><a href="ChangePassword.aspx">CHANGE PASSWORD</a></li>
+        <li><a href="Logout.aspx">LOGOUT</a></li>
+       
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+</div>
+
+<div class="col-sm-12 main"> <center>
+     <div id="h1 text-center" style="font-size:36px;text-align:center;font-family:Aparajita;">              
+                    <asp:ContentPlaceHolder runat="server" ID="CPHHedding">
+
+                    </asp:ContentPlaceHolder>                   
+                </div>                  
+                <div id="col-sm-12">
+                     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                     </asp:ContentPlaceHolder>
+                </div>
+<div class="col-sm-1"></div>
+<div class="col-sm-10 text-justify">
+             <asp:ContentPlaceHolder ID="CPHMain" runat="server"></asp:ContentPlaceHolder></div>
+<div class="col-sm-1"></div>
+    </center>
+</div>
+<div class="col-sm-12 bfooter">
+<div class="col-sm-6">&copy; Softpro India Computer Technologies (P) Ltd.</div>
+<div class="col-sm-6">Developed By : Shrejal Singh</div>
+</div>
+</div>
+</div>
+    </form>
+</body>
+</html>
+   

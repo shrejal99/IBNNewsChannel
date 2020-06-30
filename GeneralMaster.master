@@ -1,0 +1,152 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="GeneralMaster.master.cs" Inherits="GeneralMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+<style>
+  
+.ttop
+{
+min-height:45px;
+background:#1c2331;
+color:white;
+font-size:20px;
+font-family:'Bookman Old Style';
+font-weight:bold;
+padding-top:.8%;
+}
+#menu
+{
+background:rgb(243, 250, 250);
+border:none;
+box-shadow:none;
+}
+.ufooter{
+min-height:250px;
+background:rgba(0,0,0,0.88);
+}
+.bfooter
+{
+min-height:50px;
+background:black;
+margin-top:2px;
+color:white;
+padding-top:1%;
+text-align:center;
+}
+.main
+{
+    background:transparent;
+min-height:500px;
+}
+ .u {
+        color:white;
+        text-align:center;
+        font-size:20px;
+        font-family:'Bookman Old Style';
+    }
+</style>
+</head>
+<body>
+  <form runat="server" id="form1">
+<div class="container-fluid">
+
+<div class="row">
+<div class="col-sm-12 ttop">
+<div class="col-sm-4">
+<span class="fa fa-mobile"></span> +91-
+</div>
+<div class="col-sm-4">WELCOME TO IBN LIVE NEWS</div>
+<div class="col-sm-4" style="text-align:center;">
+<a href="https:\\www.facebook.com"><span class="fa fa-facebook"></span></a>
+<a href="https:\\www.twitter.com"><span class="fa fa-twitter"></span></a>
+<a href="https:\\www.youtube.com"><span class="fa fa-youtube"></span></a>
+<a href="Home.aspx"><span class="fa fa-home"></span></a>
+</div>
+</div>
+<div class="col-sm-12 header">
+<div class="col-sm-3 logo">
+<img src="images/newpng.png" class="img-responsive" style="max-height:60px;">
+</div>
+<div class="col-sm-9 menu">
+<nav class="navbar navbar-default" id="menu">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+  
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Home.aspx"><span class="fa fa-home"></span>HOME</a></li>
+        <li><a href="Aboutus.aspx">ABOUT US</a></li>
+        <li><a href="Suggestion.aspx">SUGESSTION</a></li>
+           <li><a href="Video.aspx">VIDEO GALLERY</a></li>
+        <li><a href="Login.aspx">LOGIN</a></li>
+       <li><a href="Developers.aspx">DEVELOPER</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+</div>
+
+<div class="col-sm-12 main">
+
+<div class="col-sm-1"></div>
+<div class="col-sm-10 text-justify">
+             <asp:ContentPlaceHolder ID="CPHMain" runat="server"></asp:ContentPlaceHolder></div>
+<div class="col-sm-1"></div>
+</div>
+<div class="col-sm-12 ufooter">
+    <div class="col-sm-4 u" >
+  <H2 style="color:red;">SOCIAL WEBSITES</H2>
+<a href="https:\\www.facebook.com"><span class="fa fa-facebook"></span></a>
+<a href="https:\\www.twitter.com"><span class="fa fa-twitter"></span></a>
+<a href="https:\\www.youtube.com"><span class="fa fa-youtube"></span></a>
+<a href="https:\\www.instagram.com"><span class="fa fa-instagram"></span></a>
+<a href="https:\\www.google.com"><span class="fa fa-google-plus-square"></span></a>
+    </div>  
+    <div class="col-sm-4 u" >
+        <H2 style="color:red;">OUR LINKS</H2>
+   <ul style="list-style: none;">
+<li><a href="Aboutus.aspx"> ABOUT THE IBN LIVE </a></li>
+<li><a href="#"> ADVERTISE WITH US </a></li>
+<li><a href="Suggestion.aspx"> CONTACT US </a></li>
+<li><a href="Home.aspx"> TERMS OF USE</a></li>
+</ul>
+    </div>
+     <div class="col-sm-4 u" >
+   <H2 style="color:red;">ADDRESS </H2>
+   <ul style="list-style: none;">
+<li> Near Hanuman Temple,</li>
+<li> Kapporthala, Aliganj, Lucknow-226024 </li>
+<li> Query Helpline No.: 7080102006/7</li>
+</ul>
+    </div>  
+</div>
+<div class="col-sm-12 bfooter">
+<div class="col-sm-6 b"><b>COPYRIGHT</b>&copy;<b> SOFTPRO INDIA COMPUTER TECHNOLOGIES (P) LTD.</b></div>
+<div class="col-sm-6 b"><b>DEVELOPED BY : </b></div>
+</div>
+</div>
+</div>
+        </form>
+</body>
+
+</html>

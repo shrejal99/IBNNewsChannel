@@ -1,0 +1,91 @@
+﻿#container {
+   height:auto;
+    width: 100%;
+    background:gray;
+}
+#menu {
+    height:50px;
+    width:100%;
+    background:black;
+}
+#header {
+    height: 150px;
+    width: 100%;
+}
+#logo {
+    height:150px;
+    width:20%;
+    float:left;
+    background:purple;
+}
+#title {
+    height:130px;
+    width:80%;
+    float:right;
+    background:maroon;
+    color:white;
+    text-align:center;
+    font-size:40px;
+    text-shadow:3px 3px 3px blue;
+    padding-top:20px;
+}
+#footer {
+    height:50px;
+    width:100%;
+}
+.foot1 {
+    height:50px;
+    width:50%;
+    float:left;
+    background:black;
+    color:white;
+    font-size:15px;
+    font-weight:bold;
+    font-family:Arial;
+    line-height:15px;
+}
+/*#main {
+    width: 95%;
+    height: auto;
+    min-height: 350px;
+    margin: 0px auto;
+    border-radius: 15px;
+    background: -webkit-radial-gradient(pink, white, pink);
+    margin-top:5px;
+    margin-bottom:5px;
+}*/
+#main {
+    height:800px;
+    width: 100%;
+}
+#lmain{
+    height: 800px;
+    width: 23%;
+    background:#4ede24;
+    float:left;
+}
+#rmain{
+    height: 800px;
+    width: 77%;
+    background:#133780;
+    float:right;
+}
+#hedding {
+    height: 50px;
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border: 4px solid green;
+    background: white;
+    border-radius: 10%;
+    font-size:30px;
+}
+#content {
+    min-height: 300px;
+    width: 80%;
+    color: green;
+    background: white;
+    border: 5px solid green;
+}
+

@@ -1,0 +1,93 @@
+﻿body {
+ 
+            background-image:url("http://localhost:1601/IBN News1/images/satellite (1).jpg");
+}
+* {
+    padding:0px;
+    margin:0px;
+}
+
+#outer {
+    height:auto;
+    width:1000px;
+    margin:0px auto;
+   border-radius: 20px;
+}
+#top {
+    height:100px;
+    width:1000px;
+    background:#db2424;
+}
+#header {
+width:1000px;
+}
+#logo {
+    width:120px;
+    float:left;
+    background:white;
+}
+#sitetitle {
+    height:120px;
+    width:880px;
+    float:left;
+    background:#c70d0d;
+    font-size:95px;
+    text-align:center;
+    line-height:120px;
+    text-shadow:1px 1px 2px black;
+    font-family:'Algerian';
+}
+#menu {
+    height:50px;
+    width:1000px;
+    background:red;
+    font-family:'Algerian';
+}
+#main {
+  height:500px;
+    width:1000px;
+
+}
+#left {
+   height:470px;
+    width:770px;
+    float:left;
+    background:#494242;
+    padding:15px;
+    
+}
+#right {
+    height:500px;
+    width:200px;
+    float:left;
+    border-radius:10px;
+    background:red;
+}
+#ufooter {
+    height:200px;
+    width:1000px;
+    background-image:url('../images/slide5.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+}
+.ufooterp {
+    height:200px;
+    width:333px;
+    float:left;
+    background:rgba(0, 0, 0, 0.5);
+    
+}
+#bfooter {
+    height:50px;
+    width:1000px;
+}
+.bfooterp {
+    height:50px;
+    width:500px;
+    float:left;
+    background:black;
+    color:white;
+    text-align:center;
+    line-height:50px;
+}
